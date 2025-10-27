@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-lato);
+  --font-heading: var(--font-bricolage);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+html body {
+  overflow-x: hidden;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-lato), sans-serif;
+  height: 100%;
+  scroll-behavior: auto !important;
+  overscroll-behavior: none;
+}
+
+
+@keyframes jello-vertical {
+  0% {
+    transform: rotate(90deg) scale3d(1, 1, 1);
+  }
+  30% {
+    transform: rotate(90deg) scale3d(0.75, 1.25, 1);
+  }
+  40% {
+    transform: rotate(90deg) scale3d(1.25, 0.75, 1);
+  }
+  50% {
+    transform: rotate(90deg) scale3d(0.85, 1.15, 1);
+  }
+  65% {
+    transform: rotate(90deg) scale3d(1.05, 0.95, 1);
+  }
+  75% {
+    transform: rotate(90deg) scale3d(0.95, 1.05, 1);
+  }
+  100% {
+    transform: rotate(90deg) scale3d(1, 1, 1);
+  }
+}
+
+.jello-arrow {
+  animation: jello-vertical 1.5s ease-in-out infinite;
+  transform-origin: center;
+  display: inline-block;
+}
+
+@keyframes jello-vertical-top {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  40% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  50% {
+    transform: scale3d(0.85, 1.15, 1);
+  }
+  65% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  75% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.jello-arrow-top {
+  animation: jello-vertical-top 1.5s ease-in-out infinite;
+  transform-origin: center;
+  display: inline-block;
+}
