@@ -65,7 +65,11 @@ export const metadata: Metadata = {
     images: ["/av-logo.png"],
   },
   icons: {
-    icon: "/av-logo.png",
+    icon: [
+      { url: "/favicon-32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-16.png", sizes: "16x16", type: "image/png" },
+    ],
+    apple: "/aimvirtue-logo-512.png",
   },
   alternates: {
     canonical: "https://www.aimvirtue.com",
