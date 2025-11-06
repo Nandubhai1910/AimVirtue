@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     siteName: "AimVirtue",
     images: [
       {
-        url: "/av-logo.png",
+        url: "/aimvirtue-og-image.png",
         width: 1200,
         height: 630,
         alt: "AimVirtue Logo",
