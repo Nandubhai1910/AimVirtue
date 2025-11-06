@@ -5,6 +5,7 @@ import Navbar from "@/src/sections/Navbar";
 import VolumeToggle from "@/src/components/VolumeToggle";
 import { SoundProvider } from "@/src/hooks/SoundContext";
 import LenisProvider from "../components/providers/LenisProvider";
+import { Analytics } from "@vercel/analytics/next";
 
 const bricolageGrotesque = Bricolage_Grotesque({
   subsets: ["latin"],
