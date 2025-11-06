@@ -30,7 +30,7 @@ export default function Navbar() {
           className="h-full w-full text-gray-600 dark:text-neutral-300 cursor-pointer"
         />
       ),
-      href: "#about",
+      href: "/#about",
     },
     {
       title: "For",
@@ -53,7 +53,7 @@ export default function Navbar() {
       href: "#services",
     },
     {
-      title: "contact",
+      title: "Contact",
       icon: (
         <IconMail
           onMouseEnter={play}

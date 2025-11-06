@@ -3,7 +3,7 @@
 import React, { useRef, useEffect, useState, createElement, useMemo, useCallback, memo } from "react";
 import { useSoundContext } from "@/src/hooks/SoundContext";
 
-export const Component = () => {
+export const Home = () => {
   const { play, playButton } = useSoundContext();
   return (
     <div className="bg-black w-screen h-screen flex flex-col justify-center items-center relative select-none">
@@ -110,7 +110,7 @@ declare global {
 }
 
 export default function VaporizeTextCycle({
-  texts = ["Next.js", "React"],
+  texts = ["Welcome", "To", "Aimvirtue"],
   font = {
     fontFamily: "sans-serif",
     fontSize: "50px",

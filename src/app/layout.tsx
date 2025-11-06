@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Bricolage_Grotesque, Lato } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/src/components/Navbar";
+import Navbar from "@/src/sections/Navbar";
 import VolumeToggle from "@/src/components/VolumeToggle";
 import { SoundProvider } from "@/src/hooks/SoundContext";
 import LenisProvider from "../components/providers/LenisProvider";

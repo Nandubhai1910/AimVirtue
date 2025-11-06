@@ -8,11 +8,11 @@ import CandidatesFooterSection from './components/CandidatesFooterSection'
 function page() {
   return (
     <>
-    <CandidatesHomeSection />
-    <CandidatesPartnerSection />
-    <ScrollInCardsCenter />
-    <CandidatesContactSection />
-    <CandidatesFooterSection />
+      <CandidatesHomeSection />
+      <CandidatesPartnerSection />
+      <ScrollInCardsCenter />
+      <CandidatesContactSection />
+      <CandidatesFooterSection />
     </>
   )
 }

@@ -1,11 +1,12 @@
-import AboutSection from '../components/AboutSection'
-import ContactSection from '../components/ContactSection'
-import FooterSection from '../components/FooterSection'
-import ForSection from '../components/ForSection'
-import HomeSection from '../components/HomeSection'
-import { PartnersVariant } from '../components/PartnersVariant'
-import QuoteSection from '../components/QuoteSection'
-import ServicesSection from '../components/ServiceSection'
+import AboutSection from "../sections/AboutSection"
+import ContactSection from "../sections/ContactSection"
+import FooterSection from "../sections/FooterSection"
+import ForSection from "../sections/ForSection"
+import HomeSection from "../sections/HomeSection"
+import { PartnersVariant } from "../sections/PartnersVariant"
+import QuoteSection from "../sections/QuoteSection"
+import ServicesSection from "../sections/ServiceSection"
+
 
 function page() {
   return (

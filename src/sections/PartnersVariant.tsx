@@ -1,53 +1,53 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { useSoundContext } from "../../../hooks/SoundContext";
+import { useSoundContext } from "../hooks/SoundContext";
 import {
-    CardTransformed,
-    CardsContainer,
-    ContainerScroll,
-} from "../../../components/ui/animated-cards-stack";
+  CardTransformed,
+  CardsContainer,
+  ContainerScroll,
+} from "../components/ui/animated-cards-stack";
 import { Building2, Handshake, Brain, Users, Globe } from "lucide-react";
 
 const PARTNERS_POINTS = [
-    {
-        id: "partners-1",
-        icon: <Handshake className="size-10 sm:size-9 text-[#e73e1d]" />,
-        title: "Purpose-Driven Collaboration",
-        description:
-            "We partner with organizations that share our belief — that talent growth starts with purpose, not just performance.",
-    },
-    {
-        id: "partners-2",
-        icon: <Building2 className="size-10 sm:size-9 text-[#e73e1d]" />,
-        title: "Education–Industry Bridge",
-        description:
-            "We co-create programs connecting academia and corporates, ensuring real-world learning and leadership exposure.",
-    },
-    {
-        id: "partners-3",
-        icon: <Brain className="size-10 sm:size-9 text-[#e73e1d]" />,
-        title: "Innovation & Skills Alignment",
-        description:
-            "We help companies future-proof their workforce through skill-mapped learning journeys and AI-driven insights.",
-    },
-    {
-        id: "partners-4",
-        icon: <Users className="size-10 sm:size-9 text-[#e73e1d]" />,
-        title: "Leadership & Culture Building",
-        description:
-            "From mentoring early talent to coaching senior leaders — we shape cultures that inspire growth and greatness.",
-    },
-    {
-        id: "partners-5",
-        icon: <Globe className="size-10 sm:size-9 text-[#e73e1d]" />,
-        title: "Global Impact Partnerships",
-        description:
-            "We collaborate across borders, aligning education and employment ecosystems for inclusive global talent impact.",
-    },
+  {
+    id: "partners-1",
+    icon: <Handshake className="size-10 sm:size-9 text-pink-400" />,
+    title: "Purpose-Driven Collaboration",
+    description:
+      "We partner with organizations that share our belief — that talent growth starts with purpose, not just performance.",
+  },
+  {
+    id: "partners-2",
+    icon: <Building2 className="size-10 sm:size-9 text-yellow-400" />,
+    title: "Education–Industry Bridge",
+    description:
+      "We co-create programs connecting academia and corporates, ensuring real-world learning and leadership exposure.",
+  },
+  {
+    id: "partners-3",
+    icon: <Brain className="size-10 sm:size-9 text-teal-400" />,
+    title: "Innovation & Skills Alignment",
+    description:
+      "We help companies future-proof their workforce through skill-mapped learning journeys and AI-driven insights.",
+  },
+  {
+    id: "partners-4",
+    icon: <Users className="size-10 sm:size-9 text-purple-400" />,
+    title: "Leadership & Culture Building",
+    description:
+      "From mentoring early talent to coaching senior leaders — we shape cultures that inspire growth and greatness.",
+  },
+  {
+    id: "partners-5",
+    icon: <Globe className="size-10 sm:size-9 text-blue-400" />,
+    title: "Global Impact Partnerships",
+    description:
+      "We collaborate across borders, aligning education and employment ecosystems for inclusive global talent impact.",
+  },
 ];
 
-export function CompaniesPartnersSection() {
+export function PartnersVariant() {
     const { play } = useSoundContext();
     const [isMobile, setIsMobile] = useState(false);
 

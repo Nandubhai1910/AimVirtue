@@ -13,16 +13,16 @@ export default function CandidatesFooterSection() {
     >
       <div className="w-full flex flex-col gap-[8vw] md:gap-[5vw] items-center">
         <img
-          src="/AimVirtue Logo.png"
+          src="/av-logo.png"
           alt="AimVirtue Logo"
-          className="w-[10vw] sm:w-[7vw] md:w-[5vw]"
+          className="w-[10vw] sm:w-[7vw] md:w-[8vw]"
           loading="eager"
         />
 
         <div className="flex flex-col md:flex-row justify-between items-center w-full max-w-[95vw] md:max-w-[90vw] gap-[8vw] md:gap-[6vw]">
           <div className="flex flex-col gap-[2vw] md:gap-[1.5vw] items-center md:items-start text-center md:text-left">
             <p className="text-[3.2vw] sm:text-[2vw] md:text-[1vw] opacity-60 font-semibold" style={{ fontFamily: "var(--font-bricolage), sans-serif" }}>
-              India © 2025 – AimVirtue
+              India 2025 – AimVirtue
             </p>
             <a href="/" className="no-underline">
               <h3

@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Highlighter } from "./ui/highlighter";
+import { Highlighter } from "../components/ui/highlighter";
 
 const AboutSection: React.FC = () => {
     return (
@@ -20,7 +20,6 @@ const AboutSection: React.FC = () => {
                     </span>
                 </h2>
 
-                {/* Right Content */}
                 <div className="relative w-full text-center md:text-left">
                     <div className="relative">
                         <p className="relative z-1 text-[3.5vw] sm:text-[2.5vw] md:text-[1.1vw] lg:text-[1vw] leading-[145%] sm:leading-[150%] font-body font-500 text-white">

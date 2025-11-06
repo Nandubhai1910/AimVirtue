@@ -8,8 +8,6 @@ import { useSoundContext } from "../hooks/SoundContext";
 const ForSection: React.FC = () => {
     const { play, playButton } = useSoundContext();
     const { scrollYProgress } = useScroll();
-
-    // Scroll animations
     const leftCardRotate = useTransform(scrollYProgress, [0, 1], [5, -10]);
     const leftCardY = useTransform(scrollYProgress, [0, 1], [0, -25]);
     const rightCardRotate = useTransform(scrollYProgress, [0, 1], [-10, 5]);
@@ -24,7 +22,6 @@ const ForSection: React.FC = () => {
                 className="max-w-[1300px] mx-auto flex flex-col md:flex-row justify-center items-stretch 
                    gap-10 md:gap-8 lg:gap-10 px-4 sm:px-6 md:px-8"
             >
-                {/* LEFT CARD — CORPORATES & LEADERS */}
                 <motion.div
                     style={{ y: leftCardY, rotate: leftCardRotate }}
                     initial={{ opacity: 0, scale: 0.9 }}
@@ -38,9 +35,9 @@ const ForSection: React.FC = () => {
                      hover:scale-[1.03] transition-transform duration-300 text-white"
                 >
                     <img
-                        src="https://cdn.prod.website-files.com/67079a31e71560a787d9fcc4/673cc0d695d81fca4e6b0b9e_illustration-forcompanies.svg"
+                        src="/for-company.png"
                         alt="for companies"
-                        className="w-28 sm:w-36 md:w-40 mb-6 sm:mb-7"
+                        className="w-38 sm:w-36 md:w-60 mb-6 sm:mb-7"
                     />
 
                     <div className="flex flex-col items-center text-center gap-4 sm:gap-5">
@@ -61,7 +58,7 @@ const ForSection: React.FC = () => {
                         </span>
 
                         <Link
-                            href="/corporate"
+                            href="/companies"
                             onMouseEnter={playButton}
                             className="relative inline-flex justify-center items-center px-6 sm:px-7 py-2.5 mt-4 rounded-full 
                          font-heading font-bold text-white bg-purple-600 hover:bg-purple-700 
@@ -72,7 +69,6 @@ const ForSection: React.FC = () => {
                     </div>
                 </motion.div>
 
-                {/* RIGHT CARD — STUDENTS & EARLY TALENT */}
                 <motion.div
                     style={{ y: rightCardY, rotate: rightCardRotate }}
                     initial={{ opacity: 0, scale: 0.9 }}
@@ -86,9 +82,9 @@ const ForSection: React.FC = () => {
                      hover:scale-[1.03] transition-transform duration-300 text-white"
                 >
                     <img
-                        src="https://cdn.prod.website-files.com/67079a31e71560a787d9fcc4/673cc0d68a1a1b4719476306_illustration-forcandidates.svg"
-                        alt="for students"
-                        className="w-28 sm:w-36 md:w-40 mb-6 sm:mb-7"
+                        src="/for-candidates.png"
+                        alt="for candidates"
+                        className="w-38 sm:w-36 md:w-60 mb-6 sm:mb-7"
                     />
 
                     <div className="flex flex-col items-center text-center gap-4 sm:gap-5">
@@ -107,7 +103,7 @@ const ForSection: React.FC = () => {
                         </span>
 
                         <Link
-                            href="/students"
+                            href="/candidates"
                             onMouseEnter={playButton}
                             className="relative inline-flex justify-center items-center px-6 sm:px-7 py-2.5 mt-4 rounded-full 
                          font-heading font-bold text-white bg-yellow-400 hover:bg-yellow-500 
