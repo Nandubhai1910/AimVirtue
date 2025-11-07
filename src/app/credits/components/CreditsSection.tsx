@@ -26,7 +26,7 @@ export default function CreditsSection() {
 
       <div className="relative w-[75vw] sm:w-[45vw] lg:w-[40vw] h-[75vw] sm:h-[45vw] lg:h-[30vw] mb-[5vw]">
         <Image
-          src="/Group Photo.webp"
+          src="/Group Photo.jpg"
           alt="AimVirtue Founding Team"
           fill
           className="object-cover rounded-2xl shadow-[0_0_40px_rgba(255,255,255,0.2)]"
