@@ -4,7 +4,7 @@ import CreditsSection from './components/CreditsSection'
 function page() {
   return (
     <>
-    <CreditsSection />
+      <CreditsSection />
     </>
   )
 }

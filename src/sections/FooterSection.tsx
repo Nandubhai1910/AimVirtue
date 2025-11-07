@@ -18,8 +18,10 @@ export default function FooterSection() {
         <Image
           src="/av-logo.webp"
           alt="AimVirtue Logo"
+          width={200}
+          height={200}
           className="w-[10vw] sm:w-[7vw] md:w-[8vw]"
-          loading="lazy"
+          priority
         />
 
         {/* Footer Content */}

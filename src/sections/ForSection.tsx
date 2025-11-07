@@ -36,8 +36,10 @@ const ForSection: React.FC = () => {
                      hover:scale-[1.03] transition-transform duration-300 text-white"
                 >
                     <Image
-                        src="/for-company.webp"
+                        src="/for-company.png"
                         alt="for companies"
+                        width={200}
+                        height={200}
                         className="w-38 sm:w-36 md:w-60 mb-6 sm:mb-7"
                         loading="lazy"
                     />
@@ -84,8 +86,10 @@ const ForSection: React.FC = () => {
                      hover:scale-[1.03] transition-transform duration-300 text-white"
                 >
                     <Image
-                        src="/for-candidates.webp"
+                        src="/for-candidates.png"
                         alt="for candidates"
+                        width={200}
+                        height={200}
                         className="w-38 sm:w-36 md:w-60 mb-6 sm:mb-7"
                         loading="lazy"
                     />

@@ -16,8 +16,10 @@ export default function CandidatesFooterSection() {
         <Image
           src="/av-logo.webp"
           alt="AimVirtue Logo"
+          width={200}
+          height={200}
           className="w-[10vw] sm:w-[7vw] md:w-[8vw]"
-          loading="lazy"
+          priority
         />
 
         <div className="flex flex-col md:flex-row justify-between items-center w-full max-w-[95vw] md:max-w-[90vw] gap-[8vw] md:gap-[6vw]">
