@@ -6,6 +6,7 @@ import VolumeToggle from "@/src/components/VolumeToggle";
 import { SoundProvider } from "@/src/hooks/SoundContext";
 import LenisProvider from "../components/providers/LenisProvider";
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const bricolageGrotesque = Bricolage_Grotesque({
   subsets: ["latin"],
@@ -90,6 +91,8 @@ export default function RootLayout({
               <Navbar />
               <main className="relative">{children}</main>
               <VolumeToggle />
+              <Analytics />
+              <SpeedInsights />
             </div>
           </LenisProvider>
         </SoundProvider>
