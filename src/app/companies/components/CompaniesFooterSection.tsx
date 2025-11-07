@@ -13,7 +13,7 @@ export default function CompaniesFooterSection() {
     >
       <div className="w-full flex flex-col gap-[8vw] md:gap-[5vw] items-center">
         <img
-          src="/av-logo.png"
+          src="/av-logo.webp"
           alt="AimVirtue Logo"
           className="w-[10vw] sm:w-[7vw] md:w-[8vw]"
           loading="eager"

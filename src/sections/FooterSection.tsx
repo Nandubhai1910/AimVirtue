@@ -15,7 +15,7 @@ export default function FooterSection() {
       <div className="w-full flex flex-col gap-[8vw] md:gap-[5vw] items-center">
         {/* Logo */}
         <img
-          src="/av-logo.png"
+          src="/av-logo.webp"
           alt="AimVirtue Logo"
           className="w-[10vw] sm:w-[7vw] md:w-[8vw]"
           loading="eager"
