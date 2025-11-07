@@ -30,6 +30,7 @@ export default function CreditsSection() {
           alt="AimVirtue Founding Team"
           fill
           className="object-cover rounded-2xl shadow-[0_0_40px_rgba(255,255,255,0.2)]"
+          loading="lazy"
         />
       </div>
 
@@ -37,7 +38,7 @@ export default function CreditsSection() {
         Every milestone we’ve reached has been possible because of *you* — our
         learners, partners, mentors, and the passionate team behind AimVirtue.
         Your trust, energy, and belief fuel our mission to build a world where
-        purpose drives growth and virtue defines success.  
+        purpose drives growth and virtue defines success.
         <br />
         <span className="text-yellow-400 font-semibold not-italic">
           Together, we are shaping the future — one purpose-driven journey at a time.

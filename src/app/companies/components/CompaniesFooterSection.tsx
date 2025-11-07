@@ -2,6 +2,7 @@
 
 import React from "react";
 import { useSoundContext } from "../../../hooks/SoundContext";
+import Image from "next/image";
 
 export default function CompaniesFooterSection() {
   const { play, playButton } = useSoundContext();
@@ -12,11 +13,11 @@ export default function CompaniesFooterSection() {
       style={{ fontFamily: "var(--font-lato), sans-serif" }}
     >
       <div className="w-full flex flex-col gap-[8vw] md:gap-[5vw] items-center">
-        <img
+        <Image
           src="/av-logo.webp"
           alt="AimVirtue Logo"
           className="w-[10vw] sm:w-[7vw] md:w-[8vw]"
-          loading="eager"
+          loading="lazy"
         />
 
         <div className="flex flex-col md:flex-row justify-between items-center w-full max-w-[95vw] md:max-w-[90vw] gap-[8vw] md:gap-[6vw]">
