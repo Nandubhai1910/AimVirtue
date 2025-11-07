@@ -4,7 +4,6 @@ import React from "react";
 import Link from "next/link";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useSoundContext } from "../hooks/SoundContext";
-import Image from "next/image";
 
 const ForSection: React.FC = () => {
     const { play, playButton } = useSoundContext();
@@ -35,11 +34,9 @@ const ForSection: React.FC = () => {
                      min-h-[360px] sm:min-h-[400px] md:min-h-[420px] p-6 sm:p-7 lg:p-8 
                      hover:scale-[1.03] transition-transform duration-300 text-white"
                 >
-                    <Image
+                    <img
                         src="/for-company.png"
                         alt="for companies"
-                        width={200}
-                        height={200}
                         className="w-38 sm:w-36 md:w-60 mb-6 sm:mb-7"
                         loading="lazy"
                     />
@@ -85,11 +82,9 @@ const ForSection: React.FC = () => {
                      min-h-[360px] sm:min-h-[400px] md:min-h-[420px] p-6 sm:p-7 lg:p-8 
                      hover:scale-[1.03] transition-transform duration-300 text-white"
                 >
-                    <Image
+                    <img
                         src="/for-candidates.png"
                         alt="for candidates"
-                        width={200}
-                        height={200}
                         className="w-38 sm:w-36 md:w-60 mb-6 sm:mb-7"
                         loading="lazy"
                     />

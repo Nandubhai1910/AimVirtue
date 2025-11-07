@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     siteName: "AimVirtue",
     images: [
       {
-        url: "/aimvirtue-og-image.webp",
+        url: "/aimvirtue-og-image.png",
         width: 1200,
         height: 630,
         alt: "AimVirtue Logo",
@@ -63,14 +63,14 @@ export const metadata: Metadata = {
     title: "AimVirtue – Talent Ecosystem for Life",
     description:
       "Discover purpose. Grow skills. Lead with impact. AimVirtue supports your journey from education to leadership.",
-    images: ["/av-logo.webp"],
+    images: ["/av-logo.png"],
   },
   icons: {
     icon: [
       { url: "/favicon-32.webp", sizes: "32x32", type: "image/webp" },
       { url: "/favicon-16.webp", sizes: "16x16", type: "image/webp" },
     ],
-    apple: "/aimvirtue-logo-512.webp",
+    apple: "/aimvirtue-logo-512.png",
   },
   alternates: {
     canonical: "https://www.aimvirtue.com",

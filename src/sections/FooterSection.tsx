@@ -2,7 +2,6 @@
 
 import React from "react";
 import { useSoundContext } from "../hooks/SoundContext";
-import Image from "next/image";
 
 export default function FooterSection() {
   const { play, playButton } = useSoundContext();
@@ -15,13 +14,11 @@ export default function FooterSection() {
       {/* Footer Container */}
       <div className="w-full flex flex-col gap-[8vw] md:gap-[5vw] items-center">
         {/* Logo */}
-        <Image
-          src="/av-logo.webp"
+        <img
+          src="/av-logo.png"
           alt="AimVirtue Logo"
-          width={200}
-          height={200}
           className="w-[10vw] sm:w-[7vw] md:w-[8vw]"
-          priority
+          loading="eager"
         />
 
         {/* Footer Content */}
