@@ -26,7 +26,7 @@ export default function FooterSection() {
           {/* LEFT SIDE */}
           <div className="flex flex-col gap-[2vw] md:gap-[1.5vw] items-center md:items-start text-center md:text-left">
             <p className="text-[3.2vw] sm:text-[2vw] md:text-[1vw] opacity-60 font-semibold" style={{ fontFamily: "var(--font-bricolage), sans-serif" }}>
-              India 2025 – AimVirtue
+              India 2026 – AimVirtue
             </p>
             <a href="/" className="no-underline">
               <h3
